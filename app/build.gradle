@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    ndkVersion '22.0.6917172'
+    compileSdkVersion 31
+    ndkVersion '22.1.7171670'
 
     defaultConfig {
         applicationId "com.nyantech.flappycat"
         minSdkVersion 27
-        targetSdkVersion 27
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         externalNativeBuild {
@@ -26,7 +26,7 @@ android {
     }
     externalNativeBuild {
         cmake {
-            version '3.14.0'
+            version '3.18.1'
             path "src/main/jni/CMakeLists.txt"
         }
     }
